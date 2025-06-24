@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumey</title>
+    <link rel="stylesheet" href="web.css"
+</head>
+<body>
+    <div class="header">
+        <h1>Perfumey</h1>
+        <ul>
+            <li>
+                home|
+            </li>
+            <li>product|</li>
+            <li>About|</li>
+            <li>contact|</li>
+        </ul>
+    </div>
+    <div class="search">
+        <input placeholder="search">
+    </div>
+    <div class="box">
+    <div class="b1">
+        <img src="https://th.bing.com/th/id/OIP.1orqek-GV7euQjsonTID0gHaJ4?r=0&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus accusamus, officia corrupti eum quam consequuntur alias tempore vitae soluta totam.</p>
+    </div>
+    <div class="b2">
+    <img src="https://th.bing.com/th/id/OIP.an5i0IpuHQ-C4AP1JQzfLQHaHa?r=0&w=1466&h=1466&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident voluptatibus, praesentium alias ratione harum culpa quidem suscipit id asperiores consequuntur.</p>
+    </div>
+    <div class="b3">
+        <img src="https://sokilondon.com/wp-content/uploads/2022/01/Elie-Saab-Le-Parfum-Leau-Couture-7-600x779.png">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio soluta deleniti obcaecati sequi sint, cumque pariatur maiores provident nesciunt repellat!</p>
+    </div>
+</div>
+<div class="about">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ratione, vitae quia necessitatibus quas quisquam fuga itaque voluptates commodi, reprehenderit minima, amet eveniet optio esse repudiandae perferendis cumque vel a totam odit ea placeat consequuntur quibusdam nihil? Suscipit sequi, nihil libero iste aliquid obcaecati, voluptates illum et voluptate corrupti rem magnam, sit quaerat. Aliquam animi voluptatibus dignissimos blanditiis. Nemo, voluptate accusantium? Dignissimos sit ex voluptates tempore ipsam est at mollitia consequatur. Aperiam cupiditate inventore officiis deleniti vitae dicta quo soluta facere reprehenderit amet. Soluta, molestias earum doloremque minima ea impedit deserunt veritatis. Distinctio voluptates commodi, quisquam nulla impedit quo quas quos molestias incidunt quam. Repellat unde velit eum officia illum magnam. Cupiditate, itaque vero quaerat expedita hic, dolores voluptatum maiores ipsa nulla veniam excepturi enim blanditiis obcaecati eum recusandae? Numquam explicabo, natus reiciendis ipsum distinctio fugiat architecto ut rerum officia, voluptatibus dignissimos totam vitae quidem dolores quaerat accusantium maiores suscipit, amet incidunt maxime quasi? Esse corporis eos ullam nam quibusdam incidunt nesciunt laborum quae voluptates? Reprehenderit fugit nobis, explicabo libero pariatur illo quasi fuga, voluptatibus voluptatum labore numquam, debitis suscipit assumenda aut. Aliquam assumenda cum, asperiores facilis eum pariatur nam ipsum odio iure, ex magnam, similique deleniti minima praesentium porro.</p>
+</div>
+<div class="contact">
+    <h3>Contact Us</h3>
+    <h4>Phone:9738120783</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut debitis sunt qui, fugit repudiandae distinctio! Adipisci, molestias officia dolores maiores obcaecati itaque a. Doloribus repellat quisquam aut, nam in perspiciatis excepturi eum recusandae sint sit quos deleniti voluptatibus id alias. Quae voluptate repellat voluptatibus debitis iure at corporis sint.</p>
+</div>
+</body>
+</html>
