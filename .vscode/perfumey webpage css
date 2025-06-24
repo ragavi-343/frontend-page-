@@ -1,0 +1,89 @@
+.header{
+    background-color: black;
+    color:white;
+}
+.header h1{
+    display: inline;
+}
+.header li,ul{
+    display: inline;
+ }
+ .header ul{
+ margin-left: 60%;}
+ .search {
+    color: gray;
+    padding:60px;
+    display: block;
+    text-align: center;
+ }
+ .search input{
+    width:60%;
+    padding:15px;
+    border-radius: 2px;
+ }
+ .box{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .box .b1{
+    border-bottom: black;
+    border-width: 2px;
+    border-style: solid;
+    display:inline-block;
+    height:100%;
+    width:25%;
+    padding:20px;
+    margin-left: 40px;
+ }
+.box .b1 img{
+    width:220px;
+    height:220px;
+    margin-left:40px;
+ }
+ .box .b2{
+    border-bottom: black;
+    border-width: 2px;
+    border-style: solid;
+    display:inline-block;
+    height:100%;
+    width:25%;
+    padding:20px;
+    margin-left:40px;
+ }
+.box .b2 img{
+    width:220px;
+    height:220px;
+    margin-left:40px;
+ }
+ .box .b3{
+    border-bottom: black;
+    border-width: 2px;
+    border-style: solid;
+    display:inline-block;
+    height:100%;
+    width:25%;
+    padding:20px;
+    margin-left:40px;
+ }
+.box .b3 img{
+    width:220px;
+    height:220px;
+    margin-left:40px;
+ }
+ .about h1{
+    text-align: center;
+    margin-top:40px;
+ }
+ .about p{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+ }
+ .contact{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.contact h3,h4{
+    text-align: center;
+}
