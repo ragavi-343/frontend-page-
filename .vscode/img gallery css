@@ -1,0 +1,19 @@
+.body{
+    background-color: black;
+    padding:30px;
+}
+.body .head h1{
+   color: white;
+   text-align: center;  
+}
+.body .imges img{
+    display: inline-block;
+    height:200px;
+    width:200px;
+    border-color: aliceblue;
+    border-width: 2px;
+    border-style: solid;
+    padding:50px;
+    margin-left: 50px;
+    margin-top:50px;
+}
