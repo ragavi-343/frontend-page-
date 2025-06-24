@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="flexpage.css"
+</head>
+<body>
+   <div class="body">
+    <div class="head"><h1>Image Gallery</h1></div>
+    <div class="imges">
+        <img src="https://static.vecteezy.com/system/resources/previews/028/626/672/non_2x/hd-image-ai-generative-free-photo.jpeg">
+        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg">
+        <img src="https://th.bing.com/th/id/OIP.Nz9r8457lEiZudnqGm0vhwHaDt?r=0&w=3000&h=1501&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Desktop-HD-Photo-Gallery-Pictures-1.jpg">
+        <img src="https://th.bing.com/th/id/OIP.b4uJCw2IhTCBJf9Eri3JMAHaE4?r=0&w=600&h=395&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3">
+        <img src="https://i.pinimg.com/originals/8c/6b/11/8c6b11daa67d1eecaa7bd0f64a3dc942.jpg">
+        <img src="https://royalstockphoto.s3.amazonaws.com/wp-content/uploads/2014/03/12184648/A124-Lake-Okeechobee-Sunset-at-Port-Mayaca-Canal-Dam-original.jpg">
+        <img src="https://wallpaperaccess.com/full/4379220.jpg">
+    </div>
+</div>
+</body>
+</html>
