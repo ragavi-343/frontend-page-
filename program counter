@@ -1,0 +1,56 @@
+//html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>circular bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label id="labelid">0</label><br>
+  <div id="buttonscont">
+  <button id="decbtn" class="btn">Decrease</button>
+  <button id="resbtn" class="btn">Reset</button>
+  <button id="incbtn" class="btn">Increase</button>
+  </div>
+  <script src="work.js"></script>
+</body>
+</html>
+
+//css
+#labelid{
+    font-size: 10em;
+    display: block;
+    text-align: center;
+}
+#buttonscont{
+    display:block ;
+    text-align: center;
+}
+.btn{
+    padding: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: #3997fb;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.btn:hover{
+    background-color: #3c6396;
+}
+
+//js
+const label=document.getElementById("labelid");
+let count=0;
+decbtn.onclick=()=>{
+    count--;
+    label.textContent=count;
+}
+incbtn.onclick=()=>{
+    count++;
+    label.textContent=count;
+}
+resbtn.onclick=()=>{
+    count=0;
+    label.textContent=count;
+}
