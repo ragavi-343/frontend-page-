@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="clock-container">
+<div id="clock">00:00:00</div>
+</div>
+
+  <script src="work.js"></script>
+</body>
+</html>
+
+  //css
+  body{
+    margin:0;
+    background-color: palevioletred;
+    border: black;
+    border:solid 8px;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 4em;
+}
+#clock{
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    background-color: rgb(178, 41, 89);
+}
+
+//js
+function updateClock(){
+  const now =new Date();
+  const hours=now.getHours().toString().padStart(2,0) ;
+  const minutes=now.getMinutes().toString().padStart(2,0);
+  const seconds=now.getSeconds().toString().padStart(2,0);
+  const timestring=`${hours}:${minutes}:${seconds}`;
+  document.getElementById("clock").textContent=timestring;
+}
+updateClock();
+setInterval (updateClock,1000);
+
