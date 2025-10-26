@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Interest Calculator</h1>
+  <div id="cal">
+    <label>Principal Amount:</label>
+    <input type="number" id="totval"><br>
+
+    <label>Interest Rate:</label>
+    <input type="number" id="int"><br>
+
+    <label>Years:</label>
+    <input type="number" id="years"><br>
+
+    <button type="button"onclick="calculate()">submit</button>
+    <h2 id="result">Total:</h2>
+  </div>
+
+</div>
+
+  <script src="work.js"></script>
+</body>
+</html>
+
+// css
+  .container{
+    text-align: center;
+}
+#cal{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)    ;
+    width:260px;
+    text-align: center;
+    margin-left: 180px;
+    padding: 50px;
+    font-weight:bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+input{
+    font-size: 0.5em;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+button{
+    background-color: rgb(173, 118, 225);
+    color:aliceblue;
+    font-size:0.8em;
+}
+button:hover{
+    background-color: rgb(104, 59, 181);
+}
+#result{
+    font-size: 1em;
+}
+
+//js
+function calculate() {
+  const fiam = document.getElementById("result");
+  const totval = document.getElementById("totval").value;
+  const rate = document.getElementById("int").value;
+  const years = document.getElementById("years").value;
+
+  // Convert input values to numbers
+  const principal = Number(totval);
+  const r = Number(rate/ 100);
+  const t = Number(years);
+
+  if (isNaN(principal) || isNaN(r) || isNaN(t)) {
+    fiam.textContent = "Please enter valid numbers!";
+    return;
+  }
+
+  const amount = principal * Math.pow((1 + r), t);
+  fiam.textContent = "Total: ₹" + amount.toFixed(2);
+}
+
+  
