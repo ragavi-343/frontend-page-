@@ -1,0 +1,123 @@
+//html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Roller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Stop Watch</h1>
+<div id="container">
+<div id="display">00:00:00:000</div>
+<div id="controls">
+  <button id="sb" onclick="start()">Start</button>
+  <button id="sp" onclick="stop()">Stop</button>
+  <button id="rs" onclick="reset()">Reset</button>
+</div>
+</div>
+<script src="work.js"></script>
+</body>
+</html>
+
+
+//css
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+#controls{
+   display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:50px;
+    gap:20px;
+    font-size: 2em;
+}
+#display{
+    font-size: 60px;
+    padding: 10px;
+    text-align: center;
+}
+#sb{
+    background-color: rgb(71, 184, 71);
+    color: white;
+    border-radius: 5px;
+    border-color: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#sb:hover{
+    background-color: rgb(17, 158, 17);
+}
+#sp{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5em;
+     cursor: pointer;
+}
+#sp:hover{
+    background-color: rgb(204, 12, 12);
+}
+#rs{
+    background-color: rgb(15, 146, 198);
+    color:white;
+    border-radius: 5px;
+    font-size: 1.5em;
+     cursor: pointer;
+}
+#rs:hover{
+    background-color: rgb(10, 123, 167);
+}
+
+
+//js
+let ms=0,s=0,m=0,h=0;
+let timer=null;
+let running =false;
+function start(){
+
+    if(!running){
+        running=true;
+        timer=setInterval(update,10);
+    }
+}
+function stop(){
+    running=false;
+    clearInterval(timer);
+
+}
+function reset(){
+    running=false;
+    clearInterval(timer);
+    h=m=s=ms=0;
+    document.getElementById("display").textContent="00:00:00:000";
+}
+function update(){
+ms+=10;
+if(ms==1000){
+    ms=0;
+    s++;
+}
+if(s==60){
+    s=0;
+    m++;
+}
+if(m==60)
+{
+    m=0;
+    h++;
+}
+let hr=h<10?"0"+h:h;
+let min=m<10?"0"+m:m;
+let sec=s<10?"0"+s:s;
+let mil=ms<100?"0"+(ms<10?"0"+ms:ms):ms;
+document.getElementById("display").textContent=`${hr}:${min}:${sec}:${mil}`;
+}
